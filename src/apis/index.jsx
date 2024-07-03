@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const BASE_URL = 'http://localhost:4528'
+// const BASE_URL = 'http://localhost:4528'
+
+const BASE_URL = 'https://productsapp-backend.onrender.com'
+
 const token = `Bear ${localStorage.getItem('product token')};`
 
 export const login = async (data)=>{
