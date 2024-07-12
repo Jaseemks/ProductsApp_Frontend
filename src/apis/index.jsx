@@ -15,6 +15,15 @@ export const login = async (data)=>{
     }
 }
 
+export const signup = async (data)=>{
+    try {
+       const response = await axios.post(`${BASE_URL}/users/signup`,data);
+       return response.data
+    } catch (error) {
+        throw error
+    }
+}
+
 export const addProduct = async (data)=>{
     try {
     //    const response = await axios.post(`${BASE_URL}/product`,{"Content-Type":"multipart/form-data"},data);
